@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+            xmlns:views="clr-namespace:MasterDetailTabPageBug.Views;assembly=MasterDetailTabPageBug"
+            prism:ViewModelLocator.AutowireViewModel="True"
+            x:Class="MasterDetailTabPageBug.Views.PrismTabbedPage">
+    <TabbedPage.Children>
+        <NavigationPage Title="PageA">
+            <x:Arguments>
+                <views:PageA />
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="PageB">
+            <x:Arguments>
+                <views:PageB />
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="PageC">
+            <x:Arguments>
+                <views:PageC />
+            </x:Arguments>
+        </NavigationPage>
+    </TabbedPage.Children>
+</TabbedPage>
